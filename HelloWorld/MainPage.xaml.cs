@@ -89,5 +89,10 @@ namespace HelloWorld
         {
             Frame.Navigate(typeof(Scroll));
         }
+
+        private void CanvasAndShapesBn_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(CanvasAndShapes));
+        }
     }
 }

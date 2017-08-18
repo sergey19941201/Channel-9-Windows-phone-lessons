@@ -28,8 +28,8 @@
             <ScrollViewer 
             HorizontalScrollBarVisibility="Auto" 
             VerticalScrollBarVisibility="Auto">
-                <Image Source="Assets/UWP-023-A.png" Height="800" Stretch="None" />d
-            </ScrollViewer>d
+                <Image Source="Assets/UWP-023-A.png" Height="800" Stretch="None" />
+            </ScrollViewer>
         </StackPanel>
 
         <!-- ScrollViewer can contain the stack panel -->

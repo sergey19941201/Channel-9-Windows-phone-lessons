@@ -84,5 +84,10 @@ namespace HelloWorld
         {
             Frame.Navigate(typeof(CommonXAMLControlsPart2));
         }
+
+        private void ScrollBn_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Scroll));
+        }
     }
 }

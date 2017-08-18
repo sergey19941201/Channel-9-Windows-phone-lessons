@@ -8,41 +8,47 @@
     mc:Ignorable="d" Loaded="Page_Loaded">
 
     <Grid Name="LayoutGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel >
-            <StackPanel.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="#FFD62424" Offset="1"/>
-                </LinearGradientBrush>
-            </StackPanel.Background>
-            <StackPanel Height="100" Background="#FF0B46E2" Orientation="Horizontal">
-                <Button x:Name="button" Content="Button" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="button_Click"/>
-                <CheckBox x:Name="checkBox" Content="CheckBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-            </StackPanel>
-            <DatePicker HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-            <TextBlock x:Name="ResultTextBlock" TextWrapping="Wrap" Text="TextBlock" Foreground="#FFEC0D0D"/>
-            <StackPanel Height="100" Orientation="Horizontal" >
-                <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="TextBlock" Foreground="#FFE87070" Width="100"/>
-                <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Foreground="#FF505BD3">
+
+        <ScrollViewer 
+                      HorizontalScrollBarVisibility="Auto" 
+                        VerticalScrollBarVisibility="Auto">
+            <StackPanel >
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FFD62424" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <StackPanel Height="100" Background="#FF0B46E2" Orientation="Horizontal">
+                    <Button x:Name="button" Content="Button" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="button_Click"/>
+                    <CheckBox x:Name="checkBox" Content="CheckBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                </StackPanel>
+                <DatePicker HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <TextBlock x:Name="ResultTextBlock" TextWrapping="Wrap" Text="TextBlock" Foreground="#FFEC0D0D"/>
+                <StackPanel Height="100" Orientation="Horizontal" >
+                    <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="TextBlock" Foreground="#FFE87070" Width="100"/>
+                    <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Foreground="#FF505BD3">
                     <Run Text="Text"/>
                     <Run Text=" "/>
                     <Run Text="Block"/>
-                </TextBlock>
-                <TextBlock x:Name="textBlock2" TextWrapping="Wrap" Text="TextBlocklgkfgkgkkkkfgkkfkkfg" Foreground="#FF3DCB5D" Width="59" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,10,0,10"/>
-                <Button x:Name="button1" Content="Button" HorizontalAlignment="Right" VerticalAlignment="Stretch"  Foreground="#FFCA23F0" Background="#33DEFD17" Width="99"/>
+                    </TextBlock>
+                    <TextBlock x:Name="textBlock2" TextWrapping="Wrap" Text="TextBlocklgkfgkgkkkkfgkkfkkfg" Foreground="#FF3DCB5D" Width="59" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,10,0,10"/>
+                    <Button x:Name="button1" Content="Button" HorizontalAlignment="Right" VerticalAlignment="Stretch"  Foreground="#FFCA23F0" Background="#33DEFD17" Width="99"/>
+                </StackPanel>
+                <RelativePanel Height="64">
+                    <Button x:Name="button1_Copy" Content="SplitPanel" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Foreground="#FFCA23F0" Background="#33DEFD17" Margin="0" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignTopWithPanel="True" Click="button1_Copy_Click" RelativePanel.AlignBottomWithPanel="True"/>
+                    <Button x:Name="MyPaGeButton" Content="MyPage" HorizontalAlignment="Right"  Background="#330E23F5" VerticalAlignment="Stretch" Foreground="#FF00FF46" RelativePanel.LeftOf="button1_Copy" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Margin="0,0,0.333,0" Click="MyPaGeButton_Click"/>
+                    <Button x:Name="ControlsExamplePart1" Padding="0,0,0,0"  Content="Common  &#xa;Controls &#xa;Part1" HorizontalAlignment="Right"  RelativePanel.LeftOf="MyPaGeButton" VerticalAlignment="Stretch" Background="#330E23F5" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Foreground="#FF00FF46"  Width="64.6666641235352" Click="ControlsExamplePart1_Click" />
+                    <Button x:Name="ControlsExamplePart2" Padding="0,0,0,0"  Content="Common  &#xa;Controls &#xa;Part2" HorizontalAlignment="Right"  RelativePanel.LeftOf="ControlsExamplePart1" VerticalAlignment="Stretch" Background="#330E23F5" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Foreground="#FF00FF46"  Width="64.6666641235352" Click="ControlsExamplePart2_Click"/>
+                </RelativePanel>
+                <RelativePanel Height="100">
+                    <Button x:Name="HamburgerButton" Content="Hamburger" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" BorderBrush="#FF3074D6" Background="#3300F5F5" Foreground="#FFF1C1C1" Click="HamburgerButton_Click"/>
+                    <Button x:Name="HamburgerHeavenChallengeBn" Content="Hamburger Heaven Challenge" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" RelativePanel.LeftOf="" RelativePanel.RightOf="HamburgerButton" BorderBrush="#FF00B8FD" Foreground="#FFF5EB1A" Click="HamburgerHeavenChallengeBn_Click"/>
+                    <Button x:Name="ScrollBn" Content="Scroll" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="64.6666641235352" Background="#33BD6A6A" RelativePanel.Below="HamburgerButton" Foreground="#FF16C116" Click="ScrollBn_Click"/>
+                </RelativePanel>
             </StackPanel>
-            <RelativePanel Height="64">
-                <Button x:Name="button1_Copy" Content="SplitPanel" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Foreground="#FFCA23F0" Background="#33DEFD17" Margin="0" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignTopWithPanel="True" Click="button1_Copy_Click" RelativePanel.AlignBottomWithPanel="True"/>
-                <Button x:Name="MyPaGeButton" Content="MyPage" HorizontalAlignment="Right"  Background="#330E23F5" VerticalAlignment="Stretch" Foreground="#FF00FF46" RelativePanel.LeftOf="button1_Copy" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Margin="0,0,0.333,0" Click="MyPaGeButton_Click"/>
-                <Button x:Name="ControlsExamplePart1" Padding="0,0,0,0"  Content="Common  &#xa;Controls &#xa;Part1" HorizontalAlignment="Right"  RelativePanel.LeftOf="MyPaGeButton" VerticalAlignment="Stretch" Background="#330E23F5" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Foreground="#FF00FF46"  Width="64.6666641235352" Click="ControlsExamplePart1_Click" />
-                <Button x:Name="ControlsExamplePart2" Padding="0,0,0,0"  Content="Common  &#xa;Controls &#xa;Part2" HorizontalAlignment="Right"  RelativePanel.LeftOf="ControlsExamplePart1" VerticalAlignment="Stretch" Background="#330E23F5" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Foreground="#FF00FF46"  Width="64.6666641235352" Click="ControlsExamplePart2_Click"/>
-            </RelativePanel>
-            <RelativePanel Height="100">
-                <Button x:Name="HamburgerButton" Content="Hamburger" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" BorderBrush="#FF3074D6" Background="#3300F5F5" Foreground="#FFF1C1C1" Click="HamburgerButton_Click"/>
-                <Button x:Name="HamburgerHeavenChallengeBn" Content="Hamburger Heaven Challenge" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" RelativePanel.LeftOf="" RelativePanel.RightOf="HamburgerButton" BorderBrush="#FF00B8FD" Foreground="#FFF5EB1A" Click="HamburgerHeavenChallengeBn_Click"/>
-            </RelativePanel>
 
-        </StackPanel>
+        </ScrollViewer>
 
     </Grid>
 

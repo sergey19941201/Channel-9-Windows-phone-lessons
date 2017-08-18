@@ -23,11 +23,18 @@ namespace HelloWorld
     public sealed partial class CommonXAMLControlsPart2 : Page
     {
         //!!!!!IMPORTANT ARRAY FOR DYNAMIC SEARCH
-        private string[] selectionItems = new string[] { "Ferdinand", "Frank", "Frida", "Nigel", "Tag", "Tanya", "Tanner", "Todd" };
+        //private string[] selectionItems = new string[] { "Ferdinand", "Frank", "Frida", "Nigel", "Tag", "Tanya", "Tanner", "Todd" };
+        List<string> selectionItems = new List<string>();
 
         public CommonXAMLControlsPart2()
         {
             this.InitializeComponent();
+            selectionItems.Add("Cobra");
+            selectionItems.Add("valentina");
+            selectionItems.Add("Covalska");
+            selectionItems.Add("vital");
+            selectionItems.Add("Corokl");
+
         }
 
         private void MyCalendarView_SelectedDatesChanged(CalendarView sender, CalendarViewSelectedDatesChangedEventArgs args)

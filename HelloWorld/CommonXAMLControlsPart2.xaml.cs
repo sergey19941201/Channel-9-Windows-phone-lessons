@@ -47,7 +47,7 @@ namespace HelloWorld
             //!!!!!IMPORTANT CODE FOR DYNAMIC SEARCH IGNORING CASE
             var autoSuggestBox = (AutoSuggestBox)sender;
             //Paul1967 in comments under this video https://channel9.msdn.com/Series/Windows-10-development-for-absolute-beginners/UWP-025-Common-XAML-Controls-Part-2
-            //to compare two strings for equality, ignoring case
+            //to compare two strings for equality, ignoring case (there are more comments under that video)
             var filtered = selectionItems.Where(P => P.ToLower().StartsWith(autoSuggestBox.Text.ToLower())).ToArray();
             autoSuggestBox.ItemsSource = filtered;
             //!!!!!IMPORTANT CODE FOR DYNAMIC SEARCH IGNORING CASE ENDED

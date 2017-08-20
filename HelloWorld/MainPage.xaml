@@ -41,12 +41,13 @@
                     <Button x:Name="ControlsExamplePart1" Padding="0,0,0,0"  Content="Common  &#xa;Controls &#xa;Part1" HorizontalAlignment="Right"  RelativePanel.LeftOf="MyPaGeButton" VerticalAlignment="Stretch" Background="#330E23F5" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Foreground="#FF00FF46"  Width="64.6666641235352" Click="ControlsExamplePart1_Click" />
                     <Button x:Name="ControlsExamplePart2" Padding="0,0,0,0"  Content="Common  &#xa;Controls &#xa;Part2" HorizontalAlignment="Right"  RelativePanel.LeftOf="ControlsExamplePart1" VerticalAlignment="Stretch" Background="#330E23F5" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Foreground="#FF00FF46"  Width="64.6666641235352" Click="ControlsExamplePart2_Click"/>
                 </RelativePanel>
-                <RelativePanel Height="100">
+                <RelativePanel Height="172">
                     <Button x:Name="HamburgerButton" Content="Hamburger" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" BorderBrush="#FF3074D6" Background="#3300F5F5" Foreground="#FFF1C1C1" Click="HamburgerButton_Click"/>
                     <Button x:Name="HamburgerHeavenChallengeBn" Content="Hamburger Heaven Challenge" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" RelativePanel.LeftOf="" RelativePanel.RightOf="HamburgerButton" BorderBrush="#FF00B8FD" Foreground="#FFF5EB1A" Click="HamburgerHeavenChallengeBn_Click" RelativePanel.Below=""/>
                     <Button x:Name="ScrollBn" Content="Scroll" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="64.6666641235352" Background="#33BD6A6A" RelativePanel.Below="HamburgerButton" Foreground="#FF16C116" Click="ScrollBn_Click"/>
                     <Button x:Name="CanvasAndShapesBn"  Content="Canvas and Shapes" Height="32" VerticalAlignment="Top" RelativePanel.LeftOf="" RelativePanel.RightOf="ScrollBn" Margin="0,32,0,-32" Background="#333161C7" Foreground="#FF1445EE" Click="CanvasAndShapesBn_Click"/>
                     <Button x:Name="XAML_StylesBn" Content="XAML Styles" Height="32" VerticalAlignment="Top" Foreground="#FFE0D0D0" RelativePanel.RightOf="CanvasAndShapesBn" RelativePanel.Below="HamburgerHeavenChallengeBn" Click="XAML_StylesBn_Click"/>
+                    <Button x:Name="XAML_ThemesBn" Content="XAML Themes" Height="32" VerticalAlignment="Top" Foreground="#FFFF5252" RelativePanel.Below="XAML_StylesBn" RelativePanel.LeftOf="" RelativePanel.RightOf="CanvasAndShapesBn" Click="XAML_ThemesBn_Click"/>
                 </RelativePanel>
             </StackPanel>
 

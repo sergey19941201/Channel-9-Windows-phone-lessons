@@ -147,6 +147,9 @@
     <Compile Include="XAML_Styles.xaml.cs">
       <DependentUpon>XAML_Styles.xaml</DependentUpon>
     </Compile>
+    <Compile Include="XAML_Themes.xaml.cs">
+      <DependentUpon>XAML_Themes.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -247,6 +250,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="XAML_Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="XAML_Themes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -99,5 +99,10 @@ namespace HelloWorld
         {
             Frame.Navigate(typeof(XAML_Styles));
         }
+
+        private void XAML_ThemesBn_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(XAML_Themes));
+        }
     }
 }

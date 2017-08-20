@@ -94,5 +94,10 @@ namespace HelloWorld
         {
             Frame.Navigate(typeof(CanvasAndShapes));
         }
+
+        private void XAML_StylesBn_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(XAML_Styles));
+        }
     }
 }

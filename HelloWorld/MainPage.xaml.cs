@@ -104,5 +104,10 @@ namespace HelloWorld
         {
             Frame.Navigate(typeof(XAML_Themes));
         }
+
+        private void StupendousStylesChallenge_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(StupendousStylesChallenge));
+        }
     }
 }

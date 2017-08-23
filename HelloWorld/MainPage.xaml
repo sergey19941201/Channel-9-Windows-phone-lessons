@@ -48,6 +48,7 @@
                     <Button x:Name="CanvasAndShapesBn"  Content="Canvas and Shapes" Height="32" VerticalAlignment="Top" RelativePanel.LeftOf="" RelativePanel.RightOf="ScrollBn" Margin="0,32,0,-32" Background="#333161C7" Foreground="#FF1445EE" Click="CanvasAndShapesBn_Click"/>
                     <Button x:Name="XAML_StylesBn" Content="XAML Styles" Height="32" VerticalAlignment="Top" Foreground="#FFE0D0D0" RelativePanel.RightOf="CanvasAndShapesBn" RelativePanel.Below="HamburgerHeavenChallengeBn" Click="XAML_StylesBn_Click"/>
                     <Button x:Name="XAML_ThemesBn" Content="XAML Themes" Height="32" VerticalAlignment="Top" Foreground="#FFFF5252" RelativePanel.Below="XAML_StylesBn" RelativePanel.LeftOf="" RelativePanel.RightOf="CanvasAndShapesBn" Click="XAML_ThemesBn_Click"/>
+                    <Button x:Name="StupendousStylesChallenge" Content="Stupendous Styles Challenge" Height="32" VerticalAlignment="Top" Background="#33173FC9" Foreground="#FFF05A5A" RelativePanel.Below="ScrollBn" Click="StupendousStylesChallenge_Click"/>
                 </RelativePanel>
             </StackPanel>
 

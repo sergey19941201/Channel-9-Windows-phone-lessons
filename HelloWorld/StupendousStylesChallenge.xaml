@@ -1,0 +1,58 @@
+﻿<Page
+    x:Class="HelloWorld.StupendousStylesChallenge"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloWorld"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid Height="100">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="CoffeeBn" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Background="Black" BorderBrush="#FFB9B6B6" Foreground="Snow" BorderThickness="0,0,2,0" FontSize="18pt" Click="CoffeeBn_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Assets/coffee_icon.png" Width="26" Height="26" Margin="0,0,10,0" />
+                    <TextBlock Text="Coffee" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="ScheduleBn"  Grid.Column="2" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" BorderThickness="0,0,2,0" Background="Black" Foreground="White" BorderBrush="#FFB9B6B6" FontSize="18pt" Click="ScheduleBn_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Assets/schedule_icon.png" Width="26" Height="26" Margin="0,0,10,0" />
+                    <TextBlock Text="Schedule" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="CompleteBn" Grid.Column="3" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Background="Black" Foreground="White" BorderThickness="0,0,2,0" BorderBrush="#FFB9B6B6" FontSize="18pt" Click="CompleteBn_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Assets/complete_icon.png" Width="26" Height="26" Margin="0,0,10,0" />
+                    <TextBlock Text="Complete" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="Donutsbn" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" BorderBrush="#FFB9B6B6" Foreground="#FFF7F7F7" Background="Black" BorderThickness="0,0,2,0" FontSize="18pt" Click="Donutsbn_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Assets/donut_icon.png" Margin="0,0,10,0" Width="26" />
+                    <TextBlock Text="Donuts" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+        </Grid>
+        <Grid  >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="66*" />
+                <ColumnDefinition Width="33*"/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="image" Grid.Column="1" HorizontalAlignment="Left"  Source="Assets/background.jpg" VerticalAlignment="Top" />
+            <Frame x:Name="MyFrame" Grid.Column="0"/>
+        </Grid>
+    </StackPanel>
+</Page>

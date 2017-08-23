@@ -122,7 +122,7 @@
                 Width="200" />
 
         <!-->ProgressBar that is below is binded with Slider above<-->
-            <TextBlock Grid.Row="7" Text="ProgressBar" VerticalAlignment="Center" />
+        <TextBlock Grid.Row="7" Text="ProgressBar" VerticalAlignment="Center" />
         <ProgressBar Name="MyProgressBar" 
                      Margin="20,0,0,20"
                      Grid.Row="7"

@@ -6,6 +6,9 @@
     RequestedTheme="Light">
     <Application.Resources>
         <SolidColorBrush x:Key="MyBrush" Color="Brown"/>
+        <SolidColorBrush x:Key="MyBrushRed" Color="Red"/>
+        <SolidColorBrush x:Key="MyBrushGreen" Color="Green"/>
+        <SolidColorBrush x:Key="BrownCoffee" Color="#3C1F19"/> 
         <Style TargetType="Button" x:Key="MyButtonStyle">
             <Setter Property="Background" Value="Blue"/>
             <Setter Property="FontFamily" Value="Arial Black"/>

@@ -22,55 +22,48 @@ namespace HelloWorld
     /// </summary>
     public sealed partial class CoffeePage : Page
     {
-        private static string roastValue, sweetenerValue, creamValue;
+        private string _roast, _sweetener, _cream;
         public CoffeePage()
         {
             this.InitializeComponent();
         }
 
-        private void MenuFlyoutItem_Click(object sender, RoutedEventArgs e)
+        private void RoastClick(object sender, RoutedEventArgs e)
         {
-            roastValue = "None";
-            coffeeValueTB.Text = roastValue;
+            var selected = (MenuFlyoutItem)sender;
+            _roast = selected.Text;
+            displayResult();
         }
 
-        private void MenuFlyoutItem_Click_1(object sender, RoutedEventArgs e)
+        private void SweeterClick(object sender, RoutedEventArgs e)
         {
-            roastValue = "Dark";
-            coffeeValueTB.Text = roastValue;
-
+            var selected = (MenuFlyoutItem)sender;
+            _sweetener = selected.Text;
+            displayResult();
         }
 
-        private void MenuFlyoutItem_Click_2(object sender, RoutedEventArgs e)
+        private void CreamClick(object sender, RoutedEventArgs e)
         {
-            roastValue = "Medium";
-            coffeeValueTB.Text = roastValue;
+            var selected = (MenuFlyoutItem)sender;
+            _cream = selected.Text;
+            displayResult();
         }
 
-        private void MenuFlyoutItem_Click_3(object sender, RoutedEventArgs e)
+        private void displayResult()
         {
-            if (roastValue != "None")
+            if (_roast == "None" || String.IsNullOrEmpty(_roast))
             {
-                creamValue = "2% Milk";
-                coffeeValueTB.Text = roastValue + " + " + sweetenerValue + " + " + creamValue;
+                ResultTextBlock.Text = "None";
+                return;
             }
-        }
-        private void MenuFlyoutItem_Click_4(object sender, RoutedEventArgs e)
-        {
-            if (roastValue != "None")
-            {
-                sweetenerValue = "Sugar";
-                coffeeValueTB.Text = roastValue + " + " + sweetenerValue;
-            }
-        }
 
-        private void MenuFlyoutItem_Click_5(object sender, RoutedEventArgs e)
-        {
-            if (roastValue != "None")
-            {
-                creamValue = "Whole Milk";
-                coffeeValueTB.Text = roastValue + " + " + sweetenerValue + " + " + creamValue;
-            }
+            ResultTextBlock.Text = _roast;
+
+            if (_cream != "None" && !String.IsNullOrEmpty(_cream))
+                ResultTextBlock.Text += " + " + _cream;
+
+            if (_sweetener != "None" && !String.IsNullOrEmpty(_sweetener))
+                ResultTextBlock.Text += " + " + _sweetener;
         }
     }
 }

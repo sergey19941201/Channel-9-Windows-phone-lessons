@@ -14,5 +14,16 @@
             <Setter Property="FontFamily" Value="Arial Black"/>
             <Setter Property="FontSize" Value="36"/>
         </Style>
+        <Style TargetType="Image" x:Key="WhiteLogoStyle">
+            <Setter Property="Source" Value="Assets/white_logo.png"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Margin" Value="20,20,0,0"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="LabelTextBlockStyle">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Margin" Value="20,20,20,0"/>
+        </Style>
     </Application.Resources>
 </Application>

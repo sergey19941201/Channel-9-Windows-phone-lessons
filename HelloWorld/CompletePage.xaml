@@ -7,16 +7,21 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <Image x:Name="image1" Source="Assets/color_logo.png" Canvas.ZIndex="2" HorizontalAlignment="Left" Height="172" VerticalAlignment="Top" Width="273" Margin="0,0,-173,-72"/>
-        <Image x:Name="image2" HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0"/>
-        <RelativePanel RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True" HorizontalAlignment="Left"  VerticalAlignment="Top" >
-            <TextBlock x:Name="textBlock" Text="Order" FontSize="50" Canvas.ZIndex="1" RelativePanel.AlignHorizontalCenterWithPanel="True" TextWrapping="Wrap" Margin="0,150,0,0"/>
-            <Image x:Name="image"  Source="Assets/ticket.jpg"  Width="500" Height="500"  />
-            <TextBlock x:Name="textBlock1" TextWrapping="Wrap" FontSize="100" Text="90"  RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="0,250,0,0"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
-        </RelativePanel>
+        <Image Style ="{StaticResource WhiteLogoStyle}" Source="Assets/color_logo.png" />
 
-    </RelativePanel>
+        <Image Grid.Row="1" Source="Assets/ticket.jpg" Width="300" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Order" FontSize="36" HorizontalAlignment="Center"/>
+            <TextBlock Text="96" FontSize="64" VerticalAlignment="Center"/>
+        </StackPanel>
+
+    </Grid>
 </Page>

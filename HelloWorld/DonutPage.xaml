@@ -7,51 +7,36 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <RelativePanel Background="{StaticResource MyBrushRed}">
-        <Image x:Name="image1" 
-               Source="Assets/white_logo.png" 
-               Canvas.ZIndex="2" 
-               HorizontalAlignment="Left" 
-               Height="172" 
-               VerticalAlignment="Top" 
-               Width="273" 
-               Margin="0,0,-173,-72" RelativePanel.Below="" RelativePanel.Above="" RelativePanel.AlignBottomWith=""/>
-        <Grid Margin="21,99,-1.333,-79"  RelativePanel.Below="image1">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="100" />
-                <RowDefinition Height="110" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <!-- You can apply this to anything ... ex. Image: -->
-            <!-- https://msdn.microsoft.com/en-us/library/windows/apps/xaml/dn308516.aspx -->
-            <!--You can choose one of lots standard icons by using property QueryIcon that is below-->
+    <Grid Background="Red">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-            <TextBlock Grid.Row="0" VerticalAlignment="Center" Foreground="White" FontSize="24" Height="38" Margin="0" >
-                <Run Text="Original Glazed "/>
-                <Run Text="Count"/>
-                <Run Text=": "/>
-            </TextBlock>
-            <Slider Name="MySlider" 
-                Margin="46.333,25,-0.333,31"
-                Grid.Row="0" 
+        <Image Style ="{StaticResource WhiteLogoStyle}" />
+
+        <TextBlock Grid.Row="1" 
+                   Style="{StaticResource LabelTextBlockStyle}"
+                   Text="Original Glazed Count:" />
+
+        <Slider Grid.Row="1" 
                 Grid.Column="1" 
-                HorizontalAlignment="Left"
                 Maximum="24" 
-                Minimum="0" 
-                Width="200" VerticalAlignment="Center" />
-            <TextBlock Text="Speedway Special Count: " Grid.Row="1" VerticalAlignment="Center" Foreground="White" FontSize="24" Grid.ColumnSpan="2" Margin="0,14,219.667,64" />
-            <Slider Name="MySlider1" 
-                Margin="46.333,7,-0.333,59"
-                Grid.Row="1" 
-                Grid.Column="1"
+                Margin="20,20,20,0"/>
+
+        <TextBlock Grid.Row="2" 
+                   Style="{StaticResource LabelTextBlockStyle}"
+                   Text="Speedway Special Count:"/>
+
+        <Slider Grid.Row="2" 
+                Grid.Column="1" 
                 Maximum="24" 
-                Minimum="0" 
-                Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" />
-
-
-        </Grid>
-    </RelativePanel>
+                Margin="20,20,20,0"/>
+    </Grid>
 </Page>

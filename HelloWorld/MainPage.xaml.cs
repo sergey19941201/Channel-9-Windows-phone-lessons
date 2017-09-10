@@ -109,5 +109,10 @@ namespace HelloWorld
         {
             Frame.Navigate(typeof(AdaptiveTriggers));
         }
+
+        private void AdaptiveLayoutBn_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AdaptiveLayout));
+        }
     }
 }

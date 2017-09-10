@@ -92,6 +92,9 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdaptiveLayout.xaml.cs">
+      <DependentUpon>AdaptiveLayout.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AdaptiveTriggers.xaml.cs">
       <DependentUpon>AdaptiveTriggers.xaml</DependentUpon>
     </Compile>
@@ -183,6 +186,7 @@
     <Content Include="Assets\donut_icon.png" />
     <Content Include="Assets\image_upload.png" />
     <Content Include="Assets\schedule_icon.png" />
+    <Content Include="Assets\Tibbles.jpg" />
     <Content Include="Assets\ticket.jpg" />
     <Content Include="Assets\UWP-023-A.png" />
     <Content Include="Assets\UWP-023-C.png" />
@@ -201,6 +205,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AdaptiveLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AdaptiveTriggers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

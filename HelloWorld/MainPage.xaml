@@ -50,6 +50,7 @@
                     <Button x:Name="XAML_ThemesBn" Content="XAML Themes" Height="32" VerticalAlignment="Top" Foreground="#FFFF5252" RelativePanel.Below="XAML_StylesBn" RelativePanel.LeftOf="" RelativePanel.RightOf="CanvasAndShapesBn" Click="XAML_ThemesBn_Click"/>
                     <Button x:Name="StupendousStylesChallenge" Content="Stupendous Styles Challenge" Height="32" VerticalAlignment="Top" Background="#33173FC9" Foreground="#FFF05A5A" RelativePanel.Below="ScrollBn" Click="StupendousStylesChallenge_Click"/>
                     <Button x:Name="AdaptiveTriggersBn" Content="Adaptive Triggers" Height="32" VerticalAlignment="Top" RelativePanel.RightOf="HamburgerHeavenChallengeBn" Background="#33B93F3F" Foreground="#FFE25E5E" Click="AdaptiveTriggersBn_Click"/>
+                    <Button x:Name="AdaptiveLayoutBn" Content="Adaptive Layout" Height="32" VerticalAlignment="Top" RelativePanel.RightOf="HamburgerHeavenChallengeBn" RelativePanel.Below="AdaptiveTriggersBn" Background="#33DE6666" Foreground="#FF5343EA" Click="AdaptiveLayoutBn_Click"/>
                 </RelativePanel>
             </StackPanel>
 

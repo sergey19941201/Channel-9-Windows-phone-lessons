@@ -28,11 +28,6 @@ namespace HelloWorld
             this.InitializeComponent();
         }
 
-        private void ClickMeButton_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             /*Button myButton = new Button();
@@ -108,6 +103,11 @@ namespace HelloWorld
         private void StupendousStylesChallenge_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(StupendousStylesChallenge));
+        }
+
+        private void AdaptiveTriggersBn_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AdaptiveTriggers));
         }
     }
 }
